@@ -15,7 +15,6 @@ public class TeamsService implements NotificationService{
 
             Thread.sleep(150);
 
-
             //simulate error with 10% probability
             if (ThreadLocalRandom.current().nextInt(10) == 0) {
                 throw new RuntimeException("Error on send msg in Teams");
